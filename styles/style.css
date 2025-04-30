@@ -1,5 +1,289 @@
 /* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
 
 .page {
-  /* сохраните в разметке и стилях класс page у тега body. Он удобен, чтобы составлять селекторы для разных цветовых тем. */
+  font-size: 18px;
+  line-height: 23.4px;
+  font-family: "IBM Plex Mono", sans-serif;
+  font-weight: normal;
+  font-style: normal;
+  color: var(--main-text-color);
+  padding: 0px 10px;
+  background-image: var(--main-picture);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+}
+.header {
+  min-block-size: 668px;
+  block-size: 100vh;
+  padding-block: 10px;
+  display: grid;
+  grid-template-rows: 1fr min-content 1fr;
+  align-items: center;
+  margin-block-end: 40px;
+}
+.decorated-zone {
+  position: relative;
+}
+.decorated-zone::before {
+  content: "";
+  inline-size: 25px;
+  block-size: 25px;
+  position: absolute;
+  border-block-start: 1px solid var(--accent-title-color);
+  border-inline-end: 1px solid var(--accent-title-color);
+  inset-inline-end: 0px;
+  inset-block-start: 9px;
+}
+.decorated-zone::after {
+  content: "";
+  inline-size: 25px;
+  block-size: 25px;
+  position: absolute;
+  border-inline-start: 1px solid var(--accent-title-color);
+  border-block-end: 1px solid var(--accent-title-color);
+  inset-block-end: 11px;
+  inset-inline-start: 0px;
+}
+.header__rec {
+  position: absolute;
+  inset-inline-end: 28px;
+  inset-block-start: 10px;
+  line-height: 25px;
+}
+.header__rec::before {
+  content: "REC";
+  color: var(--accent-title-color);
+}
+.header__rec::after {
+  content: "";
+  inline-size: 9px;
+  block-size: 9px;
+  background-color: var(--accent-title-color);
+  border-radius: 50%;
+  box-shadow: 0 0 3px 2px var(--accent-title-color);
+  position: absolute;
+  inset-inline-end: -19px;
+  inset-block-start: 7px; 
+}
+.header__theme-menu {
+  justify-self: end;
+  align-self: start;
+  text-transform: lowercase;
+  color: var(--accent-title-color);
+  margin-block-start: 65px;
+}
+.header__theme-menu-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.header__theme-menu-button {
+  padding: 0px 13px;
+}
+.header__theme-menu-button:hover {
+  outline: 1px solid var(--button-hover-color);
+}
+.header__theme-menu-button:focus {
+  outline: none;
+}
+.header__theme-menu-button:focus-visible {
+  border-block-end: 1px solid var(--accent-title-color);
+}
+.header__theme-menu-button_active {
+  border: 1px solid var(--accent-title-color);
+}
+.header__title {
+  color: var(--header-text-color);
+  font-size: var(--header-fs-mobile);
+  line-height: 83%;
+  font-weight: bold;
+  text-shadow: 4px 4px 0 var(--title-decor-color);
+}
+.header__title-text {
+  font-weight: bold;
+  color: var(--subtitle-text-color);
+}
+.title-decor {
+  background-color: var(--title-decor-color);
+}
+.content {
+  display: grid;
+  gap: 50px;
+  margin-block-end: 40px;
+}
+.content-section__title {
+  font-size: 18px;
+  color: var(--subtitle-text-color);
+  margin-block-end: 20px;
+}
+.text-blocks {
+  display: grid;
+  gap: 20px;
+}
+.text-block {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.text-block__title {
+  font-size: 18px;
+  color: var(--subtitle-text-color);
+}
+.accent-text {
+  text-decoration: none;
+  text-shadow: 1px 1px 0 var(--accent-title-color);
+}
+.accent-text:hover {
+  text-decoration: underline;
+}
+.accent-text:focus {
+  outline: none;
+}
+.accent-text:focus-visible {
+  outline: 1px solid currentColor;
+}
+.advices {
+  display: grid;
+  gap: 20px;
+}
+.text-block__list {
+  display: grid;
+}
+.text-block__subtitle {
+  font-size: 18px;
+  font-weight: normal;
+  color: var(--subtitle-text-color);
+  margin-bottom: 10px;
+}
+.text-block__content:not(:last-child) {
+  margin-bottom: 20px;
+}
+.gallery {
+  margin-bottom: 10px;
+}
+.content-section__gallery {
+  display: grid;
+  gap: 10px;
+}
+.gallery__image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.footer {
+  min-block-size: 668px;
+  block-size: 100vh;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+}
+.footer__title {
+  font-size: var(--header-fs-mobile);
+  font-weight: 700;
+  color: var(--header-text-color);
+  text-shadow: 2px 2px 0 var(--accent-color);
+}
+@media (min-width: 768px) {
+  .page {
+    padding: 0px 20px;
+  }
+  .header {
+    padding-block: 20px;
+    margin-block-end: 60px;
+  }
+  .decorated-zone::before {
+    inset-inline-end: 0px;
+    inset-block-start: 22px;
+  }
+  .decorated-zone::after {
+    inset-block-end: 17px;
+    inset-inline-start: 0px;
+  }
+  .header__rec {
+    inset-inline-end: 28px;
+    inset-block-start: 22px;
+  }
+  .header__theme-menu {
+    margin-block-start: 178px;
+  }
+  .header__title {
+    position: relative;
+    inset-inline-start: -20px;
+    font-size: var(--header-fs-desk);
+  }
+  .header__title-text {
+    width: 50%;
+    justify-self: end;
+  }
+  .content {
+    gap: 80px;
+    margin-block-end: 60px;
+  }
+  .content-section {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    column-gap: 20px;
+  }
+  .what {
+    grid-template-rows: 1fr;
+    .text-blocks {
+      grid-row-start: 2;
+      grid-column: span 2;
+    }
+  }
+  .art {
+    .text-block__title {
+      grid-column: span 2;
+    }
+  }
+  .gallery {
+    margin-bottom: 20px;
+  }
+  .content-section__gallery {
+    grid-template-areas: 
+    "sun sun ic"
+    "tape books ic"
+    "tape street street";
+    grid-column: span 2;
+    gap: 20px;
+  }
+  .sun {
+    grid-area: sun;
+  }
+  .ic {
+    grid-area: ic;
+  }
+  .tape {
+    grid-area: tape;
+  }
+  .books {
+    grid-area: books;
+  }
+  .street {
+    grid-area: street;
+  }
+  .footer__title {
+    font-size: var(--header-fs-desk);
+  }
+}
+@media (min-width: 1024px) {
+  .header__theme-menu {
+    align-self: start;
+    justify-self: center;
+    margin-block-start: 0;
+  }
+  .header__theme-menu-list {
+    flex-direction: row;
+  }
+  .content-section {
+    column-gap: 15px;
+  }
+  .what {
+    .text-blocks {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
 }
