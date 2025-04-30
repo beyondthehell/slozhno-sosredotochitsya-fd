@@ -12,7 +12,6 @@
 }
 @media (prefers-color-scheme: dark) {
   .theme-dark .page {
-    margin: 0;
     background-image: var(--main-picture);
   }
   .theme-light .header__rec {

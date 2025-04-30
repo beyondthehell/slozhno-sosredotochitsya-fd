@@ -1,5 +1,7 @@
-/* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
-
+body {
+  margin: 0 auto;
+  background-color: var(--main-bg-color);
+}
 .page {
   font-size: 18px;
   line-height: 23.4px;
