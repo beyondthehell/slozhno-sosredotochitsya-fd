@@ -65,7 +65,7 @@
   box-shadow: 0 0 3px 2px var(--accent-title-color);
   position: absolute;
   inset-inline-end: -19px;
-  inset-block-start: 7px; 
+  inset-block-start: 7px;
 }
 .header__theme-menu {
   justify-self: end;
@@ -116,7 +116,7 @@
 }
 .content-section__title {
   font-size: 18px;
-  color: var( --accent-title-color);
+  color: var(--accent-title-color);
   margin-block-end: 20px;
 }
 .text-blocks {
@@ -243,10 +243,10 @@
     margin-bottom: 20px;
   }
   .content-section__gallery {
-    grid-template-areas: 
-    "sun sun ic"
-    "tape books ic"
-    "tape street street";
+    grid-template-areas:
+      "sun sun ic"
+      "tape books ic"
+      "tape street street";
     grid-column: span 2;
     gap: 20px;
   }

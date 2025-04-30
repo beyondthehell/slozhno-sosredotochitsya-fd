@@ -1,10 +1,10 @@
 :root {
   --main-picture: url(../images/cover-image-dark.png);
-  --header-text-color: #DB00FF; 
-  --main-text-color: #f1b2ce; 
+  --header-text-color: #db00ff;
+  --main-text-color: #f1b2ce;
   --accent-title-color: #ff0070;
-  --text-shadow-color: #FF0070;
-  --subtitle-text-color: #000028; 
+  --text-shadow-color: #ff0070;
+  --subtitle-text-color: #000028;
   --title-decor-color: #ff0070;
   --button-hover-color: rgba(255, 0, 112, 0.4);
   --header-fs-mobile: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
