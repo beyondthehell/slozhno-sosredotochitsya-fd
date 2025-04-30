@@ -22,11 +22,7 @@
   grid-template-rows: 1fr min-content 1fr;
   align-items: center;
   margin-block-end: 40px;
-  background-image: var(--main-picture);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-attachment: fixed;
+  background-color: var(--bg-color);
 }
 .decorated-zone {
   position: relative;
@@ -118,11 +114,7 @@
   display: grid;
   gap: 50px;
   margin-block-end: 40px;
-  background-image: var(--main-picture);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-attachment: fixed;
+  background-color: var(--bg-color);
 }
 .content-section__title {
   font-size: 18px;
@@ -189,11 +181,7 @@
   display: grid;
   align-items: center;
   justify-content: center;
-  background-image: var(--main-picture);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-attachment: fixed;
+  background-color: var(--bg-color);
 }
 .footer__title {
   font-size: var(--header-fs-mobile);
