@@ -25,3 +25,7 @@
     --header-fs-desk: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
   }
 }
+.theme-dark .page {
+  margin: 0;
+  background-image: var(--main-picture);
+}

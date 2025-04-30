@@ -25,3 +25,6 @@
 .theme-light .header__rec {
   display: none;
 }
+.theme-light .page {
+  background-image: var(--main-picture);
+}
