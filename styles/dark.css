@@ -14,3 +14,6 @@
   margin: 0;
   background-image: var(--main-picture);
 }
+.theme-light .header__rec {
+  display: none;
+}
