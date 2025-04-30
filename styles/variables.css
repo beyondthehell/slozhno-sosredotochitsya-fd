@@ -2,7 +2,8 @@
   --main-picture: url(../images/cover-image-dark.png);
   --header-text-color: #DB00FF; 
   --main-text-color: #f1b2ce; 
-  --accent-title-color: #ff0070; 
+  --accent-title-color: #ff0070;
+  --text-shadow-color: #FF0070;
   --subtitle-text-color: #000028; 
   --title-decor-color: #ff0070;
   --button-hover-color: rgba(255, 0, 112, 0.4);

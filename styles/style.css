@@ -100,7 +100,7 @@
   font-size: var(--header-fs-mobile);
   line-height: 83%;
   font-weight: bold;
-  text-shadow: 4px 4px 0 var(--title-decor-color);
+  text-shadow: 4px 4px 0 var(--text-shadow-color);
 }
 .header__title-text {
   font-weight: bold;
@@ -116,7 +116,7 @@
 }
 .content-section__title {
   font-size: 18px;
-  color: var(--subtitle-text-color);
+  color: var( --accent-title-color);
   margin-block-end: 20px;
 }
 .text-blocks {
@@ -134,7 +134,7 @@
 }
 .accent-text {
   text-decoration: none;
-  text-shadow: 1px 1px 0 var(--accent-title-color);
+  text-shadow: 2px 1px 0 var(--text-shadow-color);
 }
 .accent-text:hover {
   text-decoration: underline;
@@ -184,7 +184,7 @@
   font-size: var(--header-fs-mobile);
   font-weight: 700;
   color: var(--header-text-color);
-  text-shadow: 2px 2px 0 var(--accent-color);
+  text-shadow: 2px 2px 0 var(--text-shadow-color);
 }
 @media (min-width: 768px) {
   .page {

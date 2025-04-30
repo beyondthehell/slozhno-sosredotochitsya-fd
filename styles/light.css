@@ -1,14 +1,9 @@
-/*
-  Специально для светлой темы при наличии класса.
-  Здесь окажутся стили, которые нужно переопределить принудительно,
-  переключая тему
-*/
-
 :root.theme-light {
   --main-picture: url(../images/cover-image-light.png);
   --header-text-color: #FFC2E6; 
   --main-text-color: #353430; 
   --accent-title-color: #353430; 
+  --text-shadow-color: #FF8DCB;
   --subtitle-text-color: #353430; 
   --title-decor-color: #FF8DCB;
   --button-hover-color: rgba(53, 52, 48, 0.4);
@@ -16,10 +11,13 @@
 @media (prefers-color-scheme: light) {
   :root {
     --main-picture: url(../images/cover-image-light.png);
-    --header-text-color: #FFC2E6; /*#FFC2E6 --light*/
-    --main-text-color: #353430; /*#353430 --light*/
-    --accent-color: #FF8DCB; /*#FF8DCB --light*/
-    --main-bg-color: #000028; /*#FFF1F7 --light*/
+    --header-text-color: #FFC2E6; 
+    --main-text-color: #353430; 
+    --accent-title-color: #353430; 
+    --text-shadow-color: #FF8DCB;
+    --subtitle-text-color: #353430; 
+    --title-decor-color: #FF8DCB;
+    --button-hover-color: rgba(53, 52, 48, 0.4);
     --header-fs-mobile: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
     --header-fs-desk: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
   }
