@@ -11,9 +11,6 @@
   --header-fs-desk: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
 }
 @media (prefers-color-scheme: dark) {
-  .theme-dark .page {
-    background-image: var(--main-picture);
-  }
   .theme-light .header__rec {
     display: none;
   }
