@@ -12,7 +12,6 @@
   background-position: center;
   background-attachment: fixed;
   background-color: var(--main-bg-color);
-  margin: 0 auto;
 }
 .header {
   min-block-size: 668px;
