@@ -1,1 +1,1 @@
-[Добро пожаловать, вот моя ссылка на 3 проектную работу](https://github.com/beyondthehell/slozhno-sosredotochitsya-fd)
+https://github.com/beyondthehell/slozhno-sosredotochitsya-fd
