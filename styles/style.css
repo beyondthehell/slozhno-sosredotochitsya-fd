@@ -5,7 +5,7 @@
   font-weight: normal;
   font-style: normal;
   color: var(--main-text-color);
-  padding: 0px 10px;
+
   margin: 0 auto;
   background-image: var(--main-picture);
   background-size: cover;
@@ -17,7 +17,7 @@
 .header {
   min-block-size: 668px;
   block-size: 100vh;
-  padding-block: 10px;
+  padding: 10px 10px;
   display: grid;
   grid-template-rows: 1fr min-content 1fr;
   align-items: center;
@@ -33,8 +33,8 @@
   position: absolute;
   border-block-start: 1px solid var(--accent-title-color);
   border-inline-end: 1px solid var(--accent-title-color);
-  inset-inline-end: 0px;
-  inset-block-start: 9px;
+  inset-inline-end: 11px;
+  inset-block-start: 10px;
 }
 .decorated-zone::after {
   content: "";
@@ -43,12 +43,12 @@
   position: absolute;
   border-inline-start: 1px solid var(--accent-title-color);
   border-block-end: 1px solid var(--accent-title-color);
-  inset-block-end: 11px;
-  inset-inline-start: 0px;
+  inset-block-end: 10px;
+  inset-inline-start: 9px;
 }
 .header__rec {
   position: absolute;
-  inset-inline-end: 28px;
+  inset-inline-end: 40px;
   inset-block-start: 10px;
   line-height: 25px;
 }
@@ -111,6 +111,7 @@
 }
 .content {
   display: grid;
+  padding-inline: 10px;
   gap: 50px;
   margin-block-end: 40px;
 }
@@ -187,24 +188,21 @@
   text-shadow: 2px 2px 0 var(--text-shadow-color);
 }
 @media (min-width: 768px) {
-  .page {
-    padding: 0px 20px;
-  }
   .header {
-    padding-block: 20px;
+    padding: 20px 20px;
     margin-block-end: 60px;
   }
   .decorated-zone::before {
-    inset-inline-end: 0px;
-    inset-block-start: 22px;
+    inset-inline-end: 20px;
+    inset-block-start: 20px;
   }
   .decorated-zone::after {
-    inset-block-end: 17px;
-    inset-inline-start: 0px;
+    inset-block-end: 19px;
+    inset-inline-start: 20px;
   }
   .header__rec {
-    inset-inline-end: 28px;
-    inset-block-start: 22px;
+    inset-inline-end: 48px;
+    inset-block-start: 21px;
   }
   .header__theme-menu {
     margin-block-start: 178px;
@@ -220,6 +218,7 @@
   }
   .content {
     gap: 80px;
+    padding-inline: 20px;
     margin-block-end: 60px;
   }
   .content-section {
