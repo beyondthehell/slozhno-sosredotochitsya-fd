@@ -10,25 +10,5 @@
   --main-bg-color: #000028;
   --header-fs-mobile: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
   --header-fs-desk: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
-  .header__rec {
-    display: block;
-  }
-}
-@media (prefers-color-scheme: dark) {
-  :root {
-    --main-picture: url(../images/cover-image-dark.png);
-    --header-text-color: #db00ff;
-    --main-text-color: #f1b2ce;
-    --accent-title-color: #ff0070;
-    --text-shadow-color: #ff0070;
-    --subtitle-text-color: #000028;
-    --title-decor-color: #ff0070;
-    --button-hover-color: rgba(255, 0, 112, 0.4);
-    --main-bg-color: #000028;
-    --header-fs-mobile: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
-    --header-fs-desk: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
-  }
-  .theme-light .header__rec {
-    display: none;
-  }
+  --rec: block;
 }

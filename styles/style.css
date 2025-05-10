@@ -50,6 +50,7 @@
   inset-inline-end: 40px;
   inset-block-start: 10px;
   line-height: 25px;
+  display: var(--rec);
 }
 .header__rec::before {
   content: "REC";
@@ -61,7 +62,7 @@
   block-size: 9px;
   background-color: var(--accent-title-color);
   border-radius: 50%;
-  box-shadow: 0 0 3px 2px var(--accent-title-color);
+  box-shadow: 0 0 4px 2px var(--accent-title-color);
   position: absolute;
   inset-inline-end: -19px;
   inset-block-start: 7px;
@@ -81,6 +82,7 @@
 
 .header__theme-menu-button {
   padding: 0px 13px;
+  cursor: pointer;
 }
 .header__theme-menu-button:hover {
   outline: 1px solid var(--button-hover-color);
@@ -134,7 +136,7 @@
 }
 .accent-text {
   text-decoration: none;
-  text-shadow: 2px 1px 0 var(--text-shadow-color);
+  text-shadow: 2px 2px 0 var(--text-shadow-color);
 }
 .accent-text:hover {
   text-decoration: underline;
