@@ -139,7 +139,7 @@
   text-shadow: 2px 2px 0 var(--text-shadow-color);
 }
 .accent-text:hover {
-  text-decoration: underline;
+  border-block-end: 1px solid currentColor;
 }
 .accent-text:focus {
   outline: none;
